@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>27a06e4b-9eeb-4e98-a06b-67707d9a0876</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>three_bridges_annotations\TestThreeBridgesAnnotations.py</StartupFile>
+    <StartupFile>three_bridges_annotations\test_three_bridges_annotations.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>AnnotatedUnrealMaps</Name>
     <RootNamespace>AnnotatedUnrealMaps</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,9 +61,13 @@
     <Compile Include="annotations_common\maze_occupancy_matrix.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="three_bridges_annotations\TestThreeBridgesAnnotations.py">
+    <Compile Include="three_bridges_annotations\test_three_bridges_annotations.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="three_bridges_annotations\three_bridges_annotations.json" />
+    <Content Include="three_bridges_annotations\three_bridges_annotations_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

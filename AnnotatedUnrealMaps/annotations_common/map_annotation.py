@@ -18,6 +18,12 @@ class MapAnnotation(object):
         
         self.scale_factor = scale_factor
 
+        self.annotations = {}
+        self.annotations[self.DIRECTED_PATH_ANNOTATION_TYPE] = {}
+        self.annotations[self.POLYGON_ANNOTATION_TYPE] = {}
+        self.annotations[self.POI_ANNOTATION_TYPE] = {}
+        self.annotations[self.MAZE_ANNOTATION_TYPE] = {}
+
         with open(file_path, 'r') as f:
             raw_string_data = f.read()
         json_data = json.loads(raw_string_data)
@@ -25,13 +31,13 @@ class MapAnnotation(object):
         for key in json_data:
             annotation_type = json_data[key]['Type']
             if (annotation_type == self.POI_ANNOTATION_TYPE):
-                setattr(self, key, self.__parse_annotated_poi(json_data, key, client))
+                self.annotations[self.POI_ANNOTATION_TYPE][key] = self.__parse_annotated_poi(json_data, key, client)
             elif (annotation_type == self.DIRECTED_PATH_ANNOTATION_TYPE):
-                setattr(self, key, self.__parse_directed_path(json_data, key, client))
+                self.annotations[self.DIRECTED_PATH_ANNOTATION_TYPE][key] = self.__parse_directed_path(json_data, key, client)
             elif (annotation_type == self.MAZE_ANNOTATION_TYPE):
-                setattr(self, key, self.__parse_maze_occupancy_matrix(json_data, key))
+                self.annotations[self.MAZE_ANNOTATION_TYPE][key] = self.__parse_maze_occupancy_matrix(json_data, key)
             elif (annotation_type == self.POLYGON_ANNOTATION_TYPE):
-                setattr(self, key, self.__parse_annotated_polygon(json_data, key, client))
+                self.annotations[self.POLYGON_ANNOTATION_TYPE][key] = self.__parse_annotated_polygon(json_data, key, client)
             else:
                 raise ValueError('Invalid annotation type: {0}'.format(annotation_type))
 
