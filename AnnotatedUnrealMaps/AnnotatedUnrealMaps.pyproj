@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="airsim\" />
     <Folder Include="annotations_common\" />
+    <Folder Include="unreal_scripts\" />
     <Folder Include="three_bridges_annotations\" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +65,7 @@
     <Compile Include="three_bridges_annotations\test_three_bridges_annotations.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="unreal_scripts\generate_three_bridges_annotations.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="three_bridges_annotations\three_bridges_annotations.json" />
