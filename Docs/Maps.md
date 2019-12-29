@@ -1,6 +1,11 @@
 # Maps
 This document contains information about the maps included in this repository, as well as the annotations available. 
 
+## Using Maps
+To download a map, visit the [release page](https://github.com/mitchellspryn/AnnotatedUnrealMaps/releases) and download the appropriate binary. Due to limitations in GitHub hosting, it is necessary to download the file in multiple chunks. You can use [7-zip](https://www.7-zip.org/) to Concatenate the chunks and reextract the files. Once extracted, go into the "WindowsNoEditor" folder and run the executable in that folder. This may or may not match the map name. For example, for the Three Bridges map, the executable is named "RMSpringLandscape.exe."
+
+The maps have been built for 64-bit windows systems. They will not run on OsX or linux. The best solution for those platforms currently is to run the files in a [docker windows image](https://www.docker.com/), and then use the python API to transfer the data into and out of the image via network socket. 
+
 ## Three Bridges
 This map is a large outdoor environment, which contains a variety of different landscape textures. It can be described as a grassy meadow surrounded by mountains on three sides, and water on the fourth. There is a river running through the environment, with three bridges of different sizes and styles crossing it at different points. One side of the map contains sandy beaches, while the other contains heavy tree and rock cover. There are multiple dirt paths that connect the different bridges, which have been annotated. There is also a hedge maze at one point in the map. The landscape contains rolling hills, except for the hedge maze, which is perfectly flat. Finally, there are two lakes in the map. Below is an overhead view of the environment with the annotations superimposed:
 
