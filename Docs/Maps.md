@@ -4,9 +4,9 @@ This document contains information about the maps included in this repository, a
 ## Three Bridges
 This map is a large outdoor environment, which contains a variety of different landscape textures. It can be described as a grassy meadow surrounded by mountains on three sides, and water on the fourth. There is a river running through the environment, with three bridges of different sizes and styles crossing it at different points. One side of the map contains sandy beaches, while the other contains heavy tree and rock cover. There are multiple dirt paths that connect the different bridges, which have been annotated. There is also a hedge maze at one point in the map. The landscape contains rolling hills, except for the hedge maze, which is perfectly flat. Finally, there are two lakes in the map. Below is an overhead view of the environment with the annotations superimposed:
 
-![Image]()
+![Image](https://github.com/mitchellspryn/AnnotatedUnrealMaps/blob/master/AnnotatedUnrealMaps/three_bridges_annotations/three_bridges_annotations_image_labeled.png)
 
-The available annotations are labeled in the image below. For more information about the basics of annotations and how to use them, see the [annotations documentation]().There are two annotated polygons, labeled **A** and **B**. They are shown in the image as red dots connected by thin green lines. These polygons are:
+The available annotations are labeled in the image below. For more information about the basics of annotations and how to use them, see the [annotations documentation](https://github.com/mitchellspryn/AnnotatedUnrealMaps/blob/master/Docs/Annotations.md).There are two annotated polygons, labeled **A** and **B**. They are shown in the image as red dots connected by thin green lines. These polygons are:
 * **A**: **Lake1**. The boundary here represents the place where the ground meets the water plane for the lake.
 * **B**: **Lake2**: The boundary here represents the place where the ground meets the water plane for the lake.
 
