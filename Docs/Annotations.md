@@ -22,7 +22,7 @@ Annotations are locations of objects of interest inside the simulated environmen
 
 In addition to the special fields above, each annotation has the following common fields:
 * **Type**: The type of the annotation. This will be one of the strings in the parenthesis above.
-* **Name**: This is the name of the annotation. It will describe the annotation in a human readable format. For more information on the specific annotations, consult the [documentation for the map in question]().
+* **Name**: This is the name of the annotation. It will describe the annotation in a human readable format. For more information on the specific annotations, consult the [documentation for the map in question](https://github.com/mitchellspryn/AnnotatedUnrealMaps/blob/master/Docs/Maps.md).
 
 Annotations will be stored in a .json file in the folder corresponding to the map name. For example, the annotations for the "three_bridges" map will be stored in "[three_bridges_annotations/three_bridges_annotations.json](https://github.com/mitchellspryn/AnnotatedUnrealMaps/blob/master/AnnotatedUnrealMaps/three_bridges_annotations/three_bridges_annotations.json)".
 
